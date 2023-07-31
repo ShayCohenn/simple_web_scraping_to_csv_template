@@ -20,7 +20,7 @@ Install the packages
 ```bash
 pip install -r requirements.txt
 ```
-Add your URL of the site you want to scrape, the html tag and the class name of the element you need.
+Add your URL of the site you want to scrape and the html tag and the class name of the element you need.
 ```python
 def scrape_percentage():
     data = requests.get('placeholder_url') # Put the link to the website here
