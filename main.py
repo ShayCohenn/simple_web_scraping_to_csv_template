@@ -32,8 +32,12 @@ def save_to_csv(data, filename):
         else:
             df.to_csv(filename, mode='a', index=False, header=False)
 
-while True:
-    percentage = scrape_percentage()
-    print(percentage)  
-    save_to_csv([percentage], 'result.csv')
-    time.sleep(2)
+if __name__ == '__main__':
+    while True:
+        percentage = scrape_percentage()
+        if percentage == 'Percentage information not found.':
+            print("Percentage information not found. Program stopped")
+            break
+        print(percentage)  
+        save_to_csv([percentage], 'result.csv')
+        time.sleep(2)
