@@ -8,13 +8,13 @@ from datetime import datetime
 # ----------- GET DATA ------------
 
 def scrape_percentage():
-    data = requests.get('') # Put the link to the website here
+    data = requests.get('placeholder_url') # Put the link to the website here
     html_content = data.text
     soup = BeautifulSoup(html_content, 'lxml')
 
 # 1 - Placeholder for the HTML tag you want to search
 # 2 - Placeholder for the class name, can be swaped with id
-    percentage_span = soup.find('1', class_='2')
+    percentage_span = soup.find('placeholder1_html_tag', class_='placeholder2_classname')
 
     if percentage_span:
         return percentage_span.text
