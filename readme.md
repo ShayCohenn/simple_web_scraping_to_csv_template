@@ -1,4 +1,4 @@
-# Simple web scraping template
+# Simple web scraping template using the BeautifulSoup package 
 
 ### ***Saves the data to a csv file
 ### ***Can be used for tracking precentages of stocks
