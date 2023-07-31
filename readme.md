@@ -23,12 +23,9 @@ pip install -r requirements.txt
 Add your URL of the site you want to scrape and the html tag and the class name of the element you need.
 ```python
 def scrape_percentage():
-    data = requests.get('placeholder_url') # Put the link to the website here
+    data = requests.get('placeholder_url')
     html_content = data.text
     soup = BeautifulSoup(html_content, 'lxml')
-
-# 1 - Placeholder for the HTML tag you want to search
-# 2 - Placeholder for the class name, can be swaped with id
     percentage_span = soup.find('placeholder1_html_tag', class_='placeholder2_classname')
 
 ```
